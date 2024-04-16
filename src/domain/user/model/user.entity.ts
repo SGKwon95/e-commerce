@@ -1,7 +1,8 @@
 import { Entity, PrimaryColumn } from 'typeorm'
+import { User } from './user.interface'
 
 @Entity('User')
-export class User {
+export class UserEntity implements User {
   @PrimaryColumn({
     name: 'user_id',
   })

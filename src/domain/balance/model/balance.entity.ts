@@ -1,7 +1,8 @@
 import { Column, Entity, PrimaryColumn } from 'typeorm'
+import { Balance } from './balance.interface'
 
 @Entity('Balance')
-export class Balance {
+export class BalanceEntity implements Balance {
   @PrimaryColumn({
     name: 'user_id',
   })

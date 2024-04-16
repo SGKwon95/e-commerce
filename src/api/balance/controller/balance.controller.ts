@@ -1,7 +1,7 @@
 import { Controller, Get, Body, Patch, Param } from '@nestjs/common'
-import { BalanceService } from './balance.service'
-import { ChargeBalanceDto } from './dto/charge-balance.dto'
-import { BalanceDto } from './dto/balance.dto'
+import { BalanceService } from '../../../domain/balance/service/balance.service'
+import { ChargeBalanceDto } from '../dto/charge-balance.dto'
+import { BalanceDto } from '../dto/balance.dto'
 
 @Controller('balance')
 export class BalanceController {

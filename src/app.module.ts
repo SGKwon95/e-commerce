@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
-import { BalanceModule } from './balance/balance.module';
+import { BalanceModule } from './infrastructure/balance/balance.module'
+import { ProductModule } from './infrastructure/product/product.module'
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -15,6 +16,7 @@ import { BalanceModule } from './balance/balance.module';
       dropSchema: true,
     }),
     BalanceModule,
+    ProductModule,
   ],
   controllers: [],
   providers: [],
