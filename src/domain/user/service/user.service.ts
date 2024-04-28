@@ -1,6 +1,6 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common'
-import { UserRepository } from '../../balance/repository/user.repository.interface'
-import { TYPEORM_USER_REPOSITORY_TOKEN } from '../../../infrastructure/user/user.repository.impl'
+import { UserRepository } from '../repository/user.repository.interface'
+import { TYPEORM_USER_REPOSITORY_TOKEN } from '../infrasturcture/user.repository.impl'
 import { User } from '../model/user.interface'
 
 @Injectable()
