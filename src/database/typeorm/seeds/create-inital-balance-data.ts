@@ -1,6 +1,6 @@
 import { Seeder } from 'typeorm-extension'
 import { DataSource } from 'typeorm'
-import { BalanceEntity } from '../../domain/balance/model/balance.entity'
+import { BalanceEntity } from 'src/domain/balance/model/balance.entity'
 
 export default class BalanceSeeder implements Seeder {
   public async run(dataSource: DataSource): Promise<void> {
